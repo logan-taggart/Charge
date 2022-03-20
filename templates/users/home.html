@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% if g.user %}
+<div class="title">
+    <u> <h3>Favorite Charging Stations</h3> </u>
+</div>
+    {% for title in titles %}
+        <a href="/stations/{{ids[loop.index0]}}" class="stationlink">
+            <div class="res">
+                    <hr>
+                {{ title }}
+                    <br>
+                <i class="fas fa-map-marker-alt" style="font-size:13px"></i>
+                {{ address[loop.index0] }}, {{ city[loop.index0] }}, {{ state[loop.index0] }}
+                    <br>
+                {{ usage[loop.index0] }}
+                    <br> <br>
+            </div>
+        </a>
+    {% endfor %}
+
+<div class="title">
+    <hr> <hr>
+    <br>
+<u> <h3>Account Information</h3> </u>
+    <p>
+        <b>Username:</b> {{ user.username }}
+            <br>
+        <b>Email:</b> {{ user.email }}
+    </p>
+    <p>
+        <a href="/users/profile" class="chargelink">Edit Profile</a>
+    </p>
+    <hr>
+</div>
+{% endif %}
+
+{% endblock %}

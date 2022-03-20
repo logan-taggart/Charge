@@ -1,0 +1,181 @@
+#search.form-control {
+  border-radius: 10px;
+  margin-bottom: 0;
+  width: 100%;
+  height: 40px;
+  font-size: 13px;
+  padding-right: 28px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#search.form-control + .btn {
+  position: absolute;
+  right: 9px;
+  top: 2px;
+  bottom: 4px;
+  z-index: 1;
+  padding: 0;
+  color: #66757f;
+}
+
+#search.form-control + .btn:active,
+#search.form-control + .btn:focus {
+  box-shadow: none;
+}
+
+#search:active,
+#search:focus {
+  box-shadow: none;
+  border: 5px solid #1bcea7;
+}
+
+.navbar {
+    background-color: #fff;
+    height: 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 9999;
+}
+  
+.navbar a {
+    color: #66757f;
+    font-size: 13px;
+    font-weight: bold;
+}
+  
+.navbar a:hover {
+    color: #1bcea7;
+}
+  
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+  
+.navbar-brand > img {
+    display: inline-block;
+    margin-bottom: 2px;
+    margin-right: 5px;
+    width: 25px;
+    border-radius: 2px;
+}
+  
+.nav > li > a > img {
+    width: 32px;
+    border-radius: 32px;
+}
+  
+ul.nav.navbar-nav {
+    align-items: center;
+}
+  
+ul.nav.navbar-nav li {
+    margin: 0 0.5rem;
+    display: flex;
+}
+  
+nav form.navbar-form {
+    display: flex;
+    position: relative;
+}
+
+.title {
+    text-align: center;
+}
+
+.heading {
+    color: #1bcea7;
+}
+
+.res {
+text-align: center;
+color:#66757f;
+margin-left: 10%;
+margin-right: 10%
+}
+
+.res:hover {
+    background-color: #1bcea7;
+    color: white;
+}
+
+.stationlink:hover {
+    text-decoration: none;
+}
+
+
+#user_form input.form-control {
+font-size: 18px;
+font-weight: bold;
+padding: 12px;
+margin-bottom: 10px;
+}
+
+.join-message {
+margin-top: 100px;
+margin-left: 10%;
+margin-right: 10%;
+text-align: center;
+color: white;
+border: 2px solid white;
+}
+
+.jointitle {
+    color: #1bcea7;
+}
+
+.join {
+    color:white;
+    text-align: center;
+}
+
+.sign{
+    margin-top: 100px;
+    text-align: center;
+    color: #1bcea7;
+}
+
+.chargelink {
+    color: #1bcea7;
+}
+
+.chargelink:hover {
+    color: #1bcea7
+}
+
+.welcomebox {
+    margin-left: 17.5%;
+    margin-right: 17.5%;
+}
+
+.infobox {
+    border: 3px solid #1bcea7;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.liked {
+color: gold;
+}
+
+.banner {
+width: 55%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.clr {
+background-color: rgb(148, 148, 148);
+}
+  
+  
+  
+
+  
+  
+  
+
+

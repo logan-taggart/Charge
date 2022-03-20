@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/static/stylesheets/style.css">
+    <link rel="shortcut icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="https://unpkg.com/popper"></script>
+    <script src="https://unpkg.com/bootstrap"></script>
+
+    <title>Charge</title>
+</head>
+
+<body class="{% if homedesign %} clr {% endif %}">
+        <nav class="navbar navbar-expand">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a href="/" class="navbar-brand">
+                <img src="/static/images/logo.png" alt="logo">
+                <span>Charge</span>
+              </a>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right">
+              
+              {% if not g.user %}
+              <li><a href="/signup">Sign up</a></li>
+              <li><a href="/login">Log in</a></li>
+              {% else %}
+              <li>
+              <a href="/users/{{ g.user.id }}">
+              <img src="{{ g.user.image_url }}" alt="{{ g.user.username }}">
+              </a>
+              </li>
+              <li><a href="/logout">Log out</a></li>
+              {% endif %}
+
+            </ul>
+          </div>
+        </nav>
+
+        {% if searchbar %}
+          {% if g.user %}
+            <div class="container-fluid">
+              <form class="navbar-form navbar-right" action="/stations">
+                <input name="q" class="form-control" placeholder="Search Charge (Ex. Austin, TX)" id="search">
+              </form>
+            </div>
+          {% endif %}
+        {% endif %}
+
+      {% if homedesign %}
+        {% if g.user %}
+          <br>
+          <br>
+          <img src="../static/images/bwcharge.jpg" class="banner">
+        {% endif %}
+      {% endif %}
+
+      {% if not g.user %}
+        {% if homemessage %}
+          <div class="join-message">
+              <br>
+            <h1 class="jointitle">Charge</h1>
+              <br>
+            <div class="welcomebox">
+              <h3>Charge is an essential tool for the electric vehicle driving community that allows you to search and locate charging stations for your vehicle.</h3>
+            </div>
+              <br> <br>
+            </div>
+              <br> <br> <br> <br>
+            <h2 class="join">Please <a href="/login" class="chargelink">Log In</a> or <a href="signup" class="chargelink">Sign Up</a> to use Charge</h2>
+        {% endif %}
+      {% endif %}
+    
+      {% block content %}
+      {% endblock %}
+</body>
+</html>
+
