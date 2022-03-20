@@ -3,7 +3,7 @@
 ## Description:
 Charge is a tool that is designed for the electric vehicle driving community that allows you to search by a city or state to locate nearby charging stations and detailed information on each individual station to ensure it is the best fit for your vehicle and your charging needs.
 
-[Link To Deployed Application] (https://chargecapstone.herokuapp.com/)
+[Link To Deployed Application](https://chargecapstone.herokuapp.com/)
 
 ## Features:
 * Users can search for electric vehicle charging stations based on a location.
@@ -13,8 +13,8 @@ Charge is a tool that is designed for the electric vehicle driving community tha
 * Users can view their favorites and account information in the profile tab.
 
 ## API(s) Used:
-[Open Charge Map API] (https://openchargemap.org/site/develop/api?ref=apilist.fun)<br />
-[Mapquest Geocoding API] (https://developer.mapquest.com/documentation/geocoding-api/)
+[Open Charge Map API](https://openchargemap.org/site/develop/api?ref=apilist.fun)<br />
+[Mapquest Geocoding API](https://developer.mapquest.com/documentation/geocoding-api/)
 
 ## User Flow:
 * **A user will be directed to the home page:**
